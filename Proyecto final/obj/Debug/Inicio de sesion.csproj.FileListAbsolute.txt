@@ -1,0 +1,16 @@
+C:\Users\User\Documents\Proyectos de C#\Inicio de sesion\Inicio de sesion\bin\Debug\Inicio de sesion.exe.config
+C:\Users\User\Documents\Proyectos de C#\Inicio de sesion\Inicio de sesion\bin\Debug\Inicio de sesion.exe
+C:\Users\User\Documents\Proyectos de C#\Inicio de sesion\Inicio de sesion\bin\Debug\Inicio de sesion.pdb
+C:\Users\User\Documents\Proyectos de C#\Inicio de sesion\Inicio de sesion\bin\Debug\es-419\Inicio de sesion.resources.dll
+C:\Users\User\Documents\Proyectos de C#\Inicio de sesion\Inicio de sesion\obj\Debug\Inicio_de_sesion.Properties.Resources.resources
+C:\Users\User\Documents\Proyectos de C#\Inicio de sesion\Inicio de sesion\obj\Debug\Inicio de sesion.csproj.GenerateResource.cache
+C:\Users\User\Documents\Proyectos de C#\Inicio de sesion\Inicio de sesion\obj\Debug\Inicio de sesion.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\Proyectos de C#\Inicio de sesion\Inicio de sesion\obj\Debug\es-419\Inicio de sesion.resources.dll
+C:\Users\User\Documents\Proyectos de C#\Inicio de sesion\Inicio de sesion\obj\Debug\Inicio de sesion.exe
+C:\Users\User\Documents\Proyectos de C#\Inicio de sesion\Inicio de sesion\obj\Debug\Inicio de sesion.pdb
+C:\Users\User\Documents\Proyectos de C#\Inicio de sesion\Inicio de sesion\obj\Debug\Inicio de sesion.csproj.AssemblyReference.cache
+C:\Users\User\Documents\Proyectos de C#\Inicio de sesion\Inicio de sesion\obj\Debug\Inicio_de_sesion.Login.resources
+C:\Users\User\Documents\Proyectos de C#\Inicio de sesion\Inicio de sesion\obj\Debug\Inicio_de_sesion.Login.es-419.resources
+C:\Users\User\Documents\Proyectos de C#\Inicio de sesion\Inicio de sesion\obj\Debug\Inicio_de_sesion.Register.resources
+C:\Users\User\Documents\Proyectos de C#\Inicio de sesion\Inicio de sesion\obj\Debug\Inicio_de_sesion.ChangePassword.resources
+C:\Users\User\Documents\Proyectos de C#\Inicio de sesion\Inicio de sesion\obj\Debug\Inicio_de_sesion.Menu.resources
