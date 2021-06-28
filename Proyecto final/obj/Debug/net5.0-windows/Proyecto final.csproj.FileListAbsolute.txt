@@ -23,3 +23,28 @@ C:\Users\User\Documents\Proyectos de C#\Proyecto final\obj\Debug\net5.0-windows\
 C:\Users\User\Documents\Proyectos de C#\Proyecto final\obj\Debug\net5.0-windows\Proyecto final.pdb
 C:\Users\User\Documents\Proyectos de C#\Proyecto final\obj\Debug\net5.0-windows\Proyecto final.genruntimeconfig.cache
 C:\Users\User\Documents\Proyectos de C#\Proyecto final\obj\Debug\net5.0-windows\Proyecto_final.Properties.Resources.resources
+C:\Users\kevin\OneDrive\Desktop\Clone\Proyecto Final clone\proyecto-final-grupo-47\Proyecto final\bin\Debug\net5.0-windows\Proyecto final.exe
+C:\Users\kevin\OneDrive\Desktop\Clone\Proyecto Final clone\proyecto-final-grupo-47\Proyecto final\bin\Debug\net5.0-windows\Proyecto final.deps.json
+C:\Users\kevin\OneDrive\Desktop\Clone\Proyecto Final clone\proyecto-final-grupo-47\Proyecto final\bin\Debug\net5.0-windows\Proyecto final.runtimeconfig.json
+C:\Users\kevin\OneDrive\Desktop\Clone\Proyecto Final clone\proyecto-final-grupo-47\Proyecto final\bin\Debug\net5.0-windows\Proyecto final.runtimeconfig.dev.json
+C:\Users\kevin\OneDrive\Desktop\Clone\Proyecto Final clone\proyecto-final-grupo-47\Proyecto final\bin\Debug\net5.0-windows\Proyecto final.dll
+C:\Users\kevin\OneDrive\Desktop\Clone\Proyecto Final clone\proyecto-final-grupo-47\Proyecto final\bin\Debug\net5.0-windows\ref\Proyecto final.dll
+C:\Users\kevin\OneDrive\Desktop\Clone\Proyecto Final clone\proyecto-final-grupo-47\Proyecto final\bin\Debug\net5.0-windows\Proyecto final.pdb
+C:\Users\kevin\OneDrive\Desktop\Clone\Proyecto Final clone\proyecto-final-grupo-47\Proyecto final\obj\Debug\net5.0-windows\Proyecto final.csproj.AssemblyReference.cache
+C:\Users\kevin\OneDrive\Desktop\Clone\Proyecto Final clone\proyecto-final-grupo-47\Proyecto final\obj\Debug\net5.0-windows\Proyecto_final.Amanegement.resources
+C:\Users\kevin\OneDrive\Desktop\Clone\Proyecto Final clone\proyecto-final-grupo-47\Proyecto final\obj\Debug\net5.0-windows\Proyecto_final.Approved.resources
+C:\Users\kevin\OneDrive\Desktop\Clone\Proyecto Final clone\proyecto-final-grupo-47\Proyecto final\obj\Debug\net5.0-windows\Proyecto_final.Atracking.resources
+C:\Users\kevin\OneDrive\Desktop\Clone\Proyecto Final clone\proyecto-final-grupo-47\Proyecto final\obj\Debug\net5.0-windows\Proyecto_final.Login.resources
+C:\Users\kevin\OneDrive\Desktop\Clone\Proyecto Final clone\proyecto-final-grupo-47\Proyecto final\obj\Debug\net5.0-windows\Proyecto_final.Menu.resources
+C:\Users\kevin\OneDrive\Desktop\Clone\Proyecto Final clone\proyecto-final-grupo-47\Proyecto final\obj\Debug\net5.0-windows\Proyecto_final.Properties.Resources.resources
+C:\Users\kevin\OneDrive\Desktop\Clone\Proyecto Final clone\proyecto-final-grupo-47\Proyecto final\obj\Debug\net5.0-windows\Proyecto_final.Register.resources
+C:\Users\kevin\OneDrive\Desktop\Clone\Proyecto Final clone\proyecto-final-grupo-47\Proyecto final\obj\Debug\net5.0-windows\Proyecto_final.Steps.resources
+C:\Users\kevin\OneDrive\Desktop\Clone\Proyecto Final clone\proyecto-final-grupo-47\Proyecto final\obj\Debug\net5.0-windows\Proyecto final.csproj.GenerateResource.cache
+C:\Users\kevin\OneDrive\Desktop\Clone\Proyecto Final clone\proyecto-final-grupo-47\Proyecto final\obj\Debug\net5.0-windows\Proyecto final.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kevin\OneDrive\Desktop\Clone\Proyecto Final clone\proyecto-final-grupo-47\Proyecto final\obj\Debug\net5.0-windows\Proyecto final.AssemblyInfoInputs.cache
+C:\Users\kevin\OneDrive\Desktop\Clone\Proyecto Final clone\proyecto-final-grupo-47\Proyecto final\obj\Debug\net5.0-windows\Proyecto final.AssemblyInfo.cs
+C:\Users\kevin\OneDrive\Desktop\Clone\Proyecto Final clone\proyecto-final-grupo-47\Proyecto final\obj\Debug\net5.0-windows\Proyecto final.csproj.CoreCompileInputs.cache
+C:\Users\kevin\OneDrive\Desktop\Clone\Proyecto Final clone\proyecto-final-grupo-47\Proyecto final\obj\Debug\net5.0-windows\Proyecto final.dll
+C:\Users\kevin\OneDrive\Desktop\Clone\Proyecto Final clone\proyecto-final-grupo-47\Proyecto final\obj\Debug\net5.0-windows\ref\Proyecto final.dll
+C:\Users\kevin\OneDrive\Desktop\Clone\Proyecto Final clone\proyecto-final-grupo-47\Proyecto final\obj\Debug\net5.0-windows\Proyecto final.pdb
+C:\Users\kevin\OneDrive\Desktop\Clone\Proyecto Final clone\proyecto-final-grupo-47\Proyecto final\obj\Debug\net5.0-windows\Proyecto final.genruntimeconfig.cache
