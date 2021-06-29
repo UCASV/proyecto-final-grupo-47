@@ -17,7 +17,7 @@ namespace Proyecto_final
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Atracking());
+            Application.Run(new LoginScreen());
         }
     }
 }
