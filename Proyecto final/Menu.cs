@@ -53,9 +53,9 @@ namespace Proyecto_final
 
         private void seguimiento_buttom_Click(object sender, EventArgs e)
         {
-            Amanegement abrir = new Amanegement();
+            /*Amanegement abrir = new Amanegement();
             abrir.Show();
-            this.Close();
+            this.Close();*/
         }
     }
 }

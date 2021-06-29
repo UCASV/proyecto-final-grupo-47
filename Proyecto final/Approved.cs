@@ -59,8 +59,8 @@ namespace Proyecto_final
             e.Graphics.DrawString(boxAp_4.Text, tipotexto, Brushes.Black, 330, 150);
             e.Graphics.DrawString(txtAp_5.Text, tipotexto, Brushes.Black, 490, 150);
             e.Graphics.DrawString(boxAp_5.Text, tipotexto, Brushes.Black, 700, 150);
-            e.Graphics.DrawString(txtAp_6.Text, tipotexto, Brushes.Black, 30, 200);
-            e.Graphics.DrawString(boxAp_6.Text, tipotexto, Brushes.Black, 90, 200);
+            //e.Graphics.DrawString(txtAp_6.Text, tipotexto, Brushes.Black, 30, 200);
+            //e.Graphics.DrawString(boxAp_6.Text, tipotexto, Brushes.Black, 90, 200);
             e.Graphics.DrawString(txtAp_7.Text, tipotexto, Brushes.Black, 30, 250);
 
 

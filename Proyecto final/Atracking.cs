@@ -49,19 +49,67 @@ namespace Proyecto_final
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-
-        }
-
-        private void boxAt_enfermedades_TextChanged(object sender, EventArgs e)
-        {
-            if (chk_si.Checked || chk_no.Checked)
+            if (chk_si.Checked)
             {
-                BackColor = Color.Black;
+                boxAt_enfermedades.Enabled = true;
+                return;
             }
+            boxAt_enfermedades.Enabled = false;
+            return;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (boxAt_nombres.Text == "" || boxAt_edad.Text == "" || boxAt_dui.Text == "" || boxAt_direccion.Text == "" || boxAt_telefono.Text == "")
+            {
+                MessageBox.Show("Uno o mas atributos requeridos estan vacios.");
+                return;
+            }
+
+            uint age = 0;
+            try
+            {
+                age = UInt32.Parse(boxAt_edad.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Edad debe ser un numero entero positivo.");
+                return;
+            }
+
+            if (boxAt_dui.Text.Length != 9)
+            {
+                MessageBox.Show("El DUI debe ser 9 digitos largo.");
+                return;
+            }
+            uint dui = 0;
+            try
+            {
+                dui = UInt32.Parse(boxAt_dui.Text);
+            }
+            catch
+            {
+                MessageBox.Show("El DUI debe contener solamente numeros.");
+                return;
+            }
+
+            uint phone = 0;
+            try
+            {
+                phone = UInt32.Parse(boxAt_telefono.Text);
+            }
+            catch
+            {
+                MessageBox.Show("El telefono debe contener solamente numeros.");
+                return;
+            }
+
+            if (!(age >= 60 || (age >= 18 && chk_si.Checked) ))
+            {
+                MessageBox.Show("El paciente no pertence a un grupo de prioridad.");
+                return;
+            }
+
             MessageBox.Show("El paciente ha sido ingresado con exito!");
             Approved abrir = new Approved();
             abrir.Show();

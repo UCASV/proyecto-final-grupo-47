@@ -68,6 +68,25 @@ namespace Proyecto_final
 
         private void button2_Click_1(object sender, EventArgs e)
         {
+            var username = textBox1.Text;
+            var password = textBox2.Text;
+            if (textBox1.Text == "") return;
+            /*var db = new ClinicContext();
+            var user = db.Users.FirstOrDefault(u => u.Name.Equals(username) && u.Password.Equals(password));
+            textBox2.Text = "";
+            if (user is null)
+            {
+
+                MessageBox.Show("Usuario o contrasena incorrecta.", "Ingreso fallido");
+
+
+                return;
+            }*/
+            /*var mainMenu = new MainMenu(user);
+            this.Hide();
+            mainMenu.ShowDialog();
+            mainMenu.Dispose();
+            this.Show();*/
             Menu abrir = new Menu();
             abrir.Show();
             this.Hide();
