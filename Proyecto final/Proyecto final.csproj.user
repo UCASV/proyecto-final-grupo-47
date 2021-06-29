@@ -10,7 +10,7 @@
     <Compile Update="CiteFollowing.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Login.cs">
+    <Compile Update="LoginScreen.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Menu.cs">
