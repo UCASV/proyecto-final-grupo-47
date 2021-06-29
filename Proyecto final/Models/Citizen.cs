@@ -11,7 +11,22 @@ namespace Proyecto_final.Models
         {
             Appointments = new HashSet<Appointment>();
         }
-
+        
+        public Citizen(int dui, string namePerson, int age, string addressCitizen, string email, string telephone, string disease, Institution institution, Cabin cabin)
+        {
+            Appointments = new HashSet<Appointment>();
+            Dui = dui;
+            NamePerson = namePerson;
+            Age = age;
+            AddressCitizen = addressCitizen;
+            Email = email;
+            Telephone = telephone;
+            DiseaseSuffer = disease;
+            BelongingInstitutionNavigation = institution;
+            BelongingInstitution = institution.Id;
+            IdCabinNavigation = cabin;
+            IdCabin = cabin.Id;
+        }
         public int Dui { get; set; }
         public string NamePerson { get; set; }
         public int Age { get; set; }
