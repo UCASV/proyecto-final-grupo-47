@@ -83,6 +83,7 @@ D:\UCA\oop\proyecto-final-grupo-47\Proyecto final\obj\Debug\net5.0-windows\Proye
 D:\UCA\oop\proyecto-final-grupo-47\Proyecto final\obj\Debug\net5.0-windows\Proyecto_final.Approved.resources
 D:\UCA\oop\proyecto-final-grupo-47\Proyecto final\obj\Debug\net5.0-windows\Proyecto_final.Atracking.resources
 D:\UCA\oop\proyecto-final-grupo-47\Proyecto final\obj\Debug\net5.0-windows\Proyecto_final.CiteFollowing.resources
+D:\UCA\oop\proyecto-final-grupo-47\Proyecto final\obj\Debug\net5.0-windows\Proyecto_final.LoginScreen.resources
 D:\UCA\oop\proyecto-final-grupo-47\Proyecto final\obj\Debug\net5.0-windows\Proyecto_final.Menu.resources
 D:\UCA\oop\proyecto-final-grupo-47\Proyecto final\obj\Debug\net5.0-windows\Proyecto_final.Properties.Resources.resources
 D:\UCA\oop\proyecto-final-grupo-47\Proyecto final\obj\Debug\net5.0-windows\Proyecto_final.Steps.resources
@@ -97,4 +98,3 @@ D:\UCA\oop\proyecto-final-grupo-47\Proyecto final\obj\Debug\net5.0-windows\Proye
 D:\UCA\oop\proyecto-final-grupo-47\Proyecto final\obj\Debug\net5.0-windows\ref\Proyecto final.dll
 D:\UCA\oop\proyecto-final-grupo-47\Proyecto final\obj\Debug\net5.0-windows\Proyecto final.pdb
 D:\UCA\oop\proyecto-final-grupo-47\Proyecto final\obj\Debug\net5.0-windows\Proyecto final.genruntimeconfig.cache
-D:\UCA\oop\proyecto-final-grupo-47\Proyecto final\obj\Debug\net5.0-windows\Proyecto_final.LoginScreen.resources

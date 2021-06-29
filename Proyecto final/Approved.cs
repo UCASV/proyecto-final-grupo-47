@@ -7,40 +7,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Proyecto_final.Models;
 
 namespace Proyecto_final
 {
     public partial class Approved : Form
     {
-        public Approved()
+        Appointment approvedAppointment;
+        public Approved(Appointment a)
         {
+            approvedAppointment = a;
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            label2.Text = approvedAppointment.DuiNavigation.NamePerson;
+            label3.Text = approvedAppointment.DuiNavigation.Age.ToString();
+            label4.Text = approvedAppointment.DuiNavigation.BelongingInstitutionNavigation.NameInstitution;
+            if (approvedAppointment.IsSecondAppointment)
+                label5.Text = "segunda";
+            label6.Text = approvedAppointment.IdCabinNavigation.AddressCabin;
+            label8.Text = approvedAppointment.DateHourAppointment.ToString();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
 
-        }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
 
-        }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
 
-        }
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
@@ -50,17 +47,17 @@ namespace Proyecto_final
             
             e.Graphics.DrawString(Ap_log2.Text, logo, Brushes.Black, 430, 600);
             e.Graphics.DrawString(txtAp_1.Text, tipotexto, Brushes.Black, 30, 100);
-            e.Graphics.DrawString(boxAp_1.Text, tipotexto, Brushes.Black, 130, 100);
+            e.Graphics.DrawString(label2.Text, tipotexto, Brushes.Black, 130, 100);
             e.Graphics.DrawString(txtAp_2.Text, tipotexto, Brushes.Black, 310, 100);
-            e.Graphics.DrawString(boxAp_2.Text, tipotexto, Brushes.Black, 385, 100);
+            e.Graphics.DrawString(label3.Text, tipotexto, Brushes.Black, 385, 100);
             e.Graphics.DrawString(txtAp_3.Text, tipotexto, Brushes.Black, 435, 100);
-            e.Graphics.DrawString(boxAp_3.Text, tipotexto, Brushes.Black, 750, 100);
+            e.Graphics.DrawString(label4.Text, tipotexto, Brushes.Black, 750, 100);
             e.Graphics.DrawString(txtAp_4.Text, tipotexto, Brushes.Black, 30, 150);
-            e.Graphics.DrawString(boxAp_4.Text, tipotexto, Brushes.Black, 330, 150);
+            e.Graphics.DrawString(label5.Text, tipotexto, Brushes.Black, 330, 150);
             e.Graphics.DrawString(txtAp_5.Text, tipotexto, Brushes.Black, 490, 150);
-            e.Graphics.DrawString(boxAp_5.Text, tipotexto, Brushes.Black, 700, 150);
-            //e.Graphics.DrawString(txtAp_6.Text, tipotexto, Brushes.Black, 30, 200);
-            //e.Graphics.DrawString(boxAp_6.Text, tipotexto, Brushes.Black, 90, 200);
+            e.Graphics.DrawString(label8.Text, tipotexto, Brushes.Black, 700, 150);
+            e.Graphics.DrawString(label7.Text, tipotexto, Brushes.Black, 30, 200);
+            e.Graphics.DrawString(label6.Text, tipotexto, Brushes.Black, 90, 200);
             e.Graphics.DrawString(txtAp_7.Text, tipotexto, Brushes.Black, 30, 250);
 
 
@@ -74,11 +71,6 @@ namespace Proyecto_final
 
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             printPreviewDialog1.Show();
@@ -87,6 +79,11 @@ namespace Proyecto_final
         private void Ap_log_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

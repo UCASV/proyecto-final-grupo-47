@@ -31,7 +31,7 @@ namespace Proyecto_final.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseMySQL("server=localhost;port=3306;user=root;password=firstpassword;database=project_db");
+                optionsBuilder.UseMySQL("server=localhost;port=3306;database=project_db;uid=root;password=firstpassword");
             }
         }
 
@@ -41,8 +41,6 @@ namespace Proyecto_final.Models
             {
                 entity.ToTable("appointment");
 
-                entity.HasIndex(e => e.AppointmentPlace, "FK_APPOINTMENTE_APPOINTMENT_PLACE");
-
                 entity.HasIndex(e => e.IdEmployee, "FK_APPOINTMENTE_EMPLOYEE");
 
                 entity.HasIndex(e => e.IdCabin, "FK_APPOINTMENT_CABIN");
@@ -50,8 +48,6 @@ namespace Proyecto_final.Models
                 entity.HasIndex(e => e.Dui, "FK_APPOINTMENT_CITIZEN");
 
                 entity.Property(e => e.Id).HasColumnName("id");
-
-                entity.Property(e => e.AppointmentPlace).HasColumnName("appointment_place");
 
                 entity.Property(e => e.CompletedAppointment)
                     .HasColumnType("bit(1)")
@@ -78,12 +74,6 @@ namespace Proyecto_final.Models
                     .HasColumnName("secondary_effect");
 
                 entity.Property(e => e.SecondaryEffectDuration).HasColumnName("secondary_effect_duration");
-
-                entity.HasOne(d => d.AppointmentPlaceNavigation)
-                    .WithMany(p => p.Appointments)
-                    .HasForeignKey(d => d.AppointmentPlace)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_APPOINTMENTE_APPOINTMENT_PLACE");
 
                 entity.HasOne(d => d.DuiNavigation)
                     .WithMany(p => p.Appointments)

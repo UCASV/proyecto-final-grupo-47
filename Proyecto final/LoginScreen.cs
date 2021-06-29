@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Proyecto_final.Models;
 
 namespace Proyecto_final
 {
@@ -71,7 +72,7 @@ namespace Proyecto_final
             var username = textBox1.Text;
             var password = textBox2.Text;
             if (textBox1.Text == "") return;
-            var db = new Models.project_dbContext();
+            var db = new project_dbContext();
             var user = db.Employees.FirstOrDefault(u => u.UserEmployee.Equals(username) && u.PasswordEmployee.Equals(password));
             textBox2.Text = "";
             if (user is null)
@@ -82,14 +83,17 @@ namespace Proyecto_final
 
                 return;
             }
-            /*var mainMenu = new MainMenu(user);
+            Cabin cdb = db.Set<Cabin>().SingleOrDefault(u => u.IdManager == user.Id);
+            Employee edb = db.Set<Employee>().SingleOrDefault(u => u.Id == user.Id);
+            Login newLog = new Login(cdb, edb);
+
+            db.Add(newLog);
+            db.SaveChanges();
+            Menu abrir = new Menu(newLog);
             this.Hide();
-            mainMenu.ShowDialog();
-            mainMenu.Dispose();
-            this.Show();*/
-            Menu abrir = new Menu();
-            abrir.Show();
-            this.Hide();
+            abrir.ShowDialog();
+            abrir.Dispose();
+            this.Show();
 
         }
 
@@ -102,12 +106,6 @@ namespace Proyecto_final
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Atracking abrir = new Atracking();
-            abrir.Show();
-            this.Hide();
-
-        }
+        
     }
 }
