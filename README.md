@@ -5,6 +5,7 @@
 * MySQL Server Version 8.0.25
 * MySQL Workbench Version 8.0.25
 * Microsoft .NET 5.0
+* app.diagrams.net V14.6.10 from www.diagrams.net
 * Sistema Operativo Microsoft Windows 10
 
 ## Patrones de diseño implementados
