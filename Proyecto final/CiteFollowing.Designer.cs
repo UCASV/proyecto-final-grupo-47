@@ -57,6 +57,7 @@ namespace Proyecto_final
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -275,10 +276,10 @@ namespace Proyecto_final
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::Proyecto_final.Properties.Resources.Print_icon_icons_com_73705;
-            this.button1.Location = new System.Drawing.Point(75, 389);
+            this.button1.Location = new System.Drawing.Point(118, 368);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 56);
+            this.button1.Size = new System.Drawing.Size(70, 70);
             this.button1.TabIndex = 21;
             this.button1.UseVisualStyleBackColor = false;
             // 
@@ -287,7 +288,7 @@ namespace Proyecto_final
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             this.label12.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label12.Location = new System.Drawing.Point(75, 370);
+            this.label12.Location = new System.Drawing.Point(99, 347);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(110, 19);
             this.label12.TabIndex = 22;
@@ -296,19 +297,20 @@ namespace Proyecto_final
             // button2
             // 
             this.button2.Image = global::Proyecto_final.Properties.Resources._18_113669;
-            this.button2.Location = new System.Drawing.Point(534, 368);
+            this.button2.Location = new System.Drawing.Point(570, 368);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(70, 70);
             this.button2.TabIndex = 23;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             this.label13.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label13.Location = new System.Drawing.Point(494, 347);
+            this.label13.Location = new System.Drawing.Point(531, 347);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(149, 19);
             this.label13.TabIndex = 24;
@@ -340,11 +342,21 @@ namespace Proyecto_final
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             this.label14.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label14.Location = new System.Drawing.Point(802, 347);
+            this.label14.Location = new System.Drawing.Point(805, 347);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(63, 19);
             this.label14.TabIndex = 27;
             this.label14.Text = "Regresar";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(761, 92);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(0, 20);
+            this.label15.TabIndex = 28;
             // 
             // CiteFollowing
             // 
@@ -352,6 +364,7 @@ namespace Proyecto_final
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(900, 454);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -380,6 +393,7 @@ namespace Proyecto_final
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "CiteFollowing";
             this.Text = "Seguimiento de citas";
@@ -418,5 +432,6 @@ namespace Proyecto_final
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
     }
 }

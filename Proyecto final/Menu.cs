@@ -34,35 +34,9 @@ namespace Proyecto_final
             this.Show();
         }
 
-        private void toolStripButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Steps abrir = new Steps();
-            abrir.Show();
-            this.Hide();
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void seguimiento_buttom_Click(object sender, EventArgs e)
-        {
-            CiteFollowing abrir = new CiteFollowing();
-            this.Hide();
-            abrir.ShowDialog();
-            abrir.Dispose();
-            this.Show();
         }
 
         private void button2_Click_1(object sender, EventArgs e)
@@ -71,6 +45,15 @@ namespace Proyecto_final
             {
                 this.Close();
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            CiteFollowing abrir = new CiteFollowing(currentLogin);
+            this.Hide();
+            abrir.ShowDialog();
+            abrir.Dispose();
+            this.Show();
         }
     }
 }

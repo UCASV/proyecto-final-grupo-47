@@ -31,7 +31,6 @@ namespace Proyecto_final
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.proceso_buttom = new System.Windows.Forms.Button();
-            this.seguimiento_buttom = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -40,6 +39,7 @@ namespace Proyecto_final
             this.button2 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // proceso_buttom
@@ -56,22 +56,6 @@ namespace Proyecto_final
             this.proceso_buttom.TabIndex = 0;
             this.proceso_buttom.UseVisualStyleBackColor = false;
             this.proceso_buttom.Click += new System.EventHandler(this.proceso_buttom_Click);
-            // 
-            // seguimiento_buttom
-            // 
-            this.seguimiento_buttom.BackColor = System.Drawing.SystemColors.Control;
-            this.seguimiento_buttom.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("seguimiento_buttom.BackgroundImage")));
-            this.seguimiento_buttom.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.seguimiento_buttom.DialogResult = System.Windows.Forms.DialogResult.Yes;
-            this.seguimiento_buttom.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
-            this.seguimiento_buttom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.seguimiento_buttom.Location = new System.Drawing.Point(96, 219);
-            this.seguimiento_buttom.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.seguimiento_buttom.Name = "seguimiento_buttom";
-            this.seguimiento_buttom.Size = new System.Drawing.Size(70, 70);
-            this.seguimiento_buttom.TabIndex = 1;
-            this.seguimiento_buttom.UseVisualStyleBackColor = false;
-            this.seguimiento_buttom.Click += new System.EventHandler(this.seguimiento_buttom_Click);
             // 
             // button1
             // 
@@ -109,7 +93,7 @@ namespace Proyecto_final
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(47, 190);
+            this.label2.Location = new System.Drawing.Point(62, 190);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(164, 22);
@@ -179,6 +163,21 @@ namespace Proyecto_final
             this.label6.TabIndex = 10;
             this.label6.Text = "input1";
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.SystemColors.Control;
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(107, 221);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(70, 70);
+            this.button3.TabIndex = 11;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -187,6 +186,7 @@ namespace Proyecto_final
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(786, 519);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button2);
@@ -195,9 +195,9 @@ namespace Proyecto_final
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.proceso_buttom);
-            this.Controls.Add(this.seguimiento_buttom);
             this.Controls.Add(this.button1);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Menu";
             this.Text = "Opciones";
@@ -210,7 +210,6 @@ namespace Proyecto_final
         #endregion
 
         private System.Windows.Forms.Button proceso_buttom;
-        private System.Windows.Forms.Button seguimiento_buttom;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -219,5 +218,6 @@ namespace Proyecto_final
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button3;
     }
 }

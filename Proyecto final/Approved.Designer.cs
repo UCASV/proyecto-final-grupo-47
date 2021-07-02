@@ -317,6 +317,7 @@ namespace Proyecto_final
             this.Controls.Add(this.txtAp_3);
             this.Controls.Add(this.txtAp_2);
             this.Controls.Add(this.txtAp_1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Approved";
             this.Text = "Aprobado";

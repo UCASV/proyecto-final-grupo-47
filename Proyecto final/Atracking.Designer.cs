@@ -354,6 +354,7 @@ namespace Proyecto_final
             this.Controls.Add(this.txtAt_nombres);
             this.Controls.Add(this.title_Atracking);
             this.ForeColor = System.Drawing.Color.White;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Atracking";
             this.Text = "Proceso de cita";
