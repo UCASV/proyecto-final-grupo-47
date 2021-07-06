@@ -40,6 +40,8 @@ namespace Proyecto_final
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -108,19 +110,20 @@ namespace Proyecto_final
             // button1
             // 
             this.button1.Image = global::Proyecto_final.Properties.Resources._18_113669;
-            this.button1.Location = new System.Drawing.Point(336, 239);
+            this.button1.Location = new System.Drawing.Point(329, 239);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(78, 74);
             this.button1.TabIndex = 9;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label6.Location = new System.Drawing.Point(301, 222);
+            this.label6.Location = new System.Drawing.Point(295, 222);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(153, 19);
             this.label6.TabIndex = 10;
@@ -128,6 +131,8 @@ namespace Proyecto_final
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.CustomFormat = "dd/MM/yyyy hh:mm:ss";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(249, 79);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(300, 23);
@@ -135,6 +140,8 @@ namespace Proyecto_final
             // 
             // dateTimePicker2
             // 
+            this.dateTimePicker2.CustomFormat = "dd/MM/yyyy hh:mm:ss";
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker2.Location = new System.Drawing.Point(249, 120);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(300, 23);
@@ -148,12 +155,36 @@ namespace Proyecto_final
             this.textBox1.Size = new System.Drawing.Size(205, 61);
             this.textBox1.TabIndex = 13;
             // 
+            // button4
+            // 
+            this.button4.Image = global::Proyecto_final.Properties.Resources.restart_back_left_arrow_6022;
+            this.button4.Location = new System.Drawing.Point(646, 241);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(70, 70);
+            this.button4.TabIndex = 27;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
+            this.label14.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label14.Location = new System.Drawing.Point(649, 222);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(63, 19);
+            this.label14.TabIndex = 28;
+            this.label14.Text = "Regresar";
+            // 
             // VaccineProcess
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(752, 324);
+            this.ClientSize = new System.Drawing.Size(735, 324);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
@@ -165,6 +196,7 @@ namespace Proyecto_final
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "VaccineProcess";
             this.Text = "VaccineProcess";
@@ -186,5 +218,7 @@ namespace Proyecto_final
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label14;
     }
 }

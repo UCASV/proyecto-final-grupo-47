@@ -89,10 +89,10 @@ namespace Proyecto_final
 
             db.Add(newLog);
             db.SaveChanges();
-            Menu abrir = new Menu(newLog);
+            Menu menu = new Menu(newLog);
             this.Hide();
-            abrir.ShowDialog();
-            abrir.Dispose();
+            menu.ShowDialog();
+            menu.Dispose();
             this.Show();
 
         }

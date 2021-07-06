@@ -13,8 +13,11 @@ namespace Proyecto_final
 {
     public partial class CiteFollowing : Form
     {
-        public CiteFollowing()
+        Login currentLogin;
+        Appointment currentAppointment;
+        public CiteFollowing(Login c)
         {
+            currentLogin = c;
             InitializeComponent();
         }
 
@@ -38,10 +41,9 @@ namespace Proyecto_final
             {
 
                 MessageBox.Show("No existen citas pendientes con el DUI ingresado.");
-
-
                 return;
             }
+            currentAppointment = appoint;
             var citizen = db.Citizens.FirstOrDefault(u => u.Dui == (int)dui);
             textBox2.Text = citizen.NamePerson;
             textBox9.Text = citizen.Age.ToString();
@@ -52,11 +54,28 @@ namespace Proyecto_final
             textBox7.Text = appoint.DateHourAppointment.ToString();
             textBox10.Text = citizen.Email;
             textBox8.Text = db.Cabins.FirstOrDefault(u => u.Id == appoint.IdCabin).AddressCabin;
+            if (appoint.IsSecondAppointment)
+                label15.Text = "Segunda Cita";
+            else
+                label15.Text = "Primera Cita";
+
 
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (currentAppointment is null)
+            {
+                return;
+            }
+            VaccineProcess abrir = new VaccineProcess(currentLogin,currentAppointment);
+            abrir.ShowDialog();
+            abrir.Dispose();
             this.Close();
         }
     }
